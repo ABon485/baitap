@@ -1,0 +1,90 @@
+body{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Swarp{
+    display: flex;
+    background-color: rgb(134, 175, 161);
+    justify-content: center;
+    width: 480px;
+    height: 70%;
+    padding-right: 60px;
+    box-sizing: border-box;
+}
+.Swarp .input-box{
+    width: 100%;
+    height: 50px;
+    margin: 30px 10px;
+}
+ div.input-box label{
+    width: 150px;
+    padding: 15px;
+   
+}
+.input-box{
+    position: relative;
+    display: flex;
+    height: 60px;
+    box-sizing: border-box;
+}
+.text ::placeholder{
+    padding: 20px 20px 20px 40px;
+    color: white;
+}
+.text{
+    margin-left: -60px;
+    margin-top: 8px;
+}
+.text input{
+    padding-left: 70px;
+    box-sizing: border-box;
+}
+.text input{
+    position: relative;
+    width: 120%;
+    height: 80%;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 40px;
+}
+.input-box i{
+    position: absolute;
+    left:  140px;
+    padding-top: 16px;
+
+}
+.input-radio{
+    display: grid;
+    grid-template-columns: 40% 10% 20% 10% 20%;
+}
+.gender{
+    padding-left: 23px;
+}
+.check-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submit{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    
+}
+.submit input{
+    width: 70px ;
+    height: 35px;
+    color: rgb(24, 23, 23);
+    background-color: brown;
+    border-radius: 10px;
+    border: none;   
+    cursor: pointer;
+
+}
