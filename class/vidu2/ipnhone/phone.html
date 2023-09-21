@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone</title>
+</head>
+<body>
+    <p>
+        <form name="form">
+            <p>
+                <label for="">
+                    Product Name 
+                    <input type="text" id="pro">
+                </label>
+                <label for="">
+                    Product Picture
+                    <input type="file" id="prop" onchange="displayimg(event)">
+                </label>
+                <label for="">
+                    Product Price
+                    <input type="number" id="propri">
+                </label>
+            </p>
+            <button onclick="takedata(); return false;">add</button>
+        </form>
+        <hr>
+        <div>
+            <h1>ĐIỆN THOẠI NỔI BẬT NHẤT</h1>
+            <img src="#" id="anh" alt="hình ảnh sẽ hiển thị ở đây">
+            <p id="nav"></p>
+            <p id="demo"></p>
+        </div>
+        
+    </p>
+    <script>
+        function takedata(){
+            let name = document.getElementById("pro").value;
+            let propri = document.getElementById("propri").value;
+            document.getElementById("nav").innerHTML = name;
+            document.getElementById("demo").innerHTML = propri;
+        }
+
+        function displayimg(event) {
+            let input = event.target;
+            let image = document.getElementById("anh");
+            image.src = URL.createObjectURL(input.files[0]);
+            
+        }
+    </script>
+</body>
+</html>
