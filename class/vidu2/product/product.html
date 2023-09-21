@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product.css">
+    <title>New product</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h2>New Product</h2>
+    <hr/>
+    <form action="" name="form">
+        <p>
+            <label for="">
+                Product Name:
+                <input type="text" id="product" name="pName">
+            </label>
+            <label for="">
+                Quantity
+                <input type="text" id="Quantity" name="Quantity">
+            </label>
+        </p>
+
+        <p>
+            <label for="">
+                unit price
+                <input type="text" id="price" name="uprice">
+            </label>
+            <label for="">
+                Discount
+                <input type="text" id="Discount" name="dc">
+            </label>
+        </p>
+        
+        <p>
+            <button type="button" onclick="sell()">Sell</button>
+            <button type="button">Cancel</button>
+        </p>
+ 
+    </form>
+    <table id="tbl">
+        <tr>
+            <th>ID</th>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Unit Price</th>
+            <th>Discount</th>
+            <th>Subtotal</th>
+        </tr>
+    </table>
+
+    <script>
+        var id = 0;
+        function sell() {
+            id++;
+            var pName = form.pName.value;
+            var Quantity = form.Quantity.value;
+            var uprice = form.uprice.value;
+            var dc = form.dc.value;
+            var st = Quantity * uprice * (1 - dc / 100);
+            var row = "<tr>";
+            row += "<td>" + id + "</td>";
+            row += "<td>" + pName + "</td>";
+            row += "<td>" + Quantity + "</td>";
+            row += "<td>" + uprice + "</td>";
+            row += "<td>" + dc + "</td>";
+            row += "<td>" + st + "</td>";
+            row += "</tr>";
+            document.getElementById("tbl").innerHTML += row;
+        }
+    </script>
+    
+</body>
+</html>
