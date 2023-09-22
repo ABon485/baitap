@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+.nav{
+    display: block;
+    padding-left: 500px;
+
+}
+.nav5{
+    padding-top: 30px;
+    padding-left: 550px;
+    align-items: center;
+
+}

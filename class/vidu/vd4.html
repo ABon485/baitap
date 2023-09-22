@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Click...</h4>
+    <input type="text" id="nhap" name="nhap">
+    <button onclick="hello()">Click</button>
+    <p id="on"></p>
+
+    <script>
+        function hello(){
+            var text = document.getElementById("nhap").value;
+            var greeting;
+            if(text > 0){
+                greeting = "Bạn được 10 điểm.";
+            }
+            else if(text < 0){
+                greeting = "Bạn đã bị trừ 25 điểm.";
+            }
+            else {
+                greeting = "Không có điểm nào được cộng hoặc trừ.";
+            }
+            document.getElementById('on').innerHTML = greeting;
+        }
+    </script>
+    
+</body>
+</html>

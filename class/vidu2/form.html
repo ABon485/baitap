@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<form>
+  <input type="number" id="number">
+  <input type="button" value="Check" onclick="Myfunction()">
+</form>
+
+<p id="demo"></p>
+
+<script>
+function Myfunction() {
+  var name = document.getElementById("number").value;
+  if (name % 2 == 0) {
+    document.getElementById("demo").innerHTML = "So chan la: " + name;
+  } else {
+    document.getElementById("demo").innerHTML = "So le la: " + name;
+  }
+}
+</script>
+
+</body>
+</html>

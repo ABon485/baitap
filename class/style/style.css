@@ -1,0 +1,33 @@
+table{
+    border-width:  1px ;
+    width: 100%;
+
+}
+tr{
+    background-color:white;
+}
+#pink{
+    background-color: pink;
+}
+#purple{
+    background-color: blueviolet;
+}
+#yellow{
+    background-color:brown;
+}
+/* .image{
+    border: 1px solid rgb(red, green, blue) ;
+    animation: border-color-transition 3s infinite;
+}
+@keyframes border-color-transition{
+    30%{
+        border-color: red;
+    }
+    600%{
+        border-color : yellowgreen;
+    }
+    100% {border-color: green;}
+}
+#o{
+    border-color: brown;
+} */

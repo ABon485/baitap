@@ -1,0 +1,26 @@
+p{
+    margin: 0px;
+    padding: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.before,.after{
+    background-color: blueviolet;
+}
+.diva{
+    background-color: black;
+    color: white;
+    height: 90px;
+}
+.div1{
+    background-color:rgb(179, 25, 25);
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 130px;
+}
+.div2{
+    background-color:rgb(25, 191, 94);
+}
