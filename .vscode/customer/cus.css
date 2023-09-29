@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(179, 204, 229);
+}
+.container input{
+    display: block;
+    margin-left: 5px;
+}
+.container label{
+    margin-left: 5px;
+}
+.but-container {
+    padding-top: 20px;
+    margin-left: 87px;   
+}
+.but-container button{
+    border: none;
+    color: rgb(243, 12, 12);
+}
+.table-container{
+    width: 100%;
+    margin-top: 10px;
+    border-width: 1px solid;
+}
+#tle{
+    background-color: aqua;
+    width: 100%;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    
+}
+#tle thead tr th{
+    
+    width: calc(100%/9);
+    /* flex:1; */
+}
